@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+nav {
+  padding: 0px 100px;
+  height: 7%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLeft {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.navLeft p {
+  cursor: pointer;
+}
+
+.navLeft p:hover {
+  text-underline-offset: 8px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+#firstP {
+  margin-left: 20px;
+}
+
+.navRight {
+  font-weight: 300;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.navLink {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 25px;
+}
+
+.navRight p {
+  cursor: pointer;
+}
+
+.navRight .navLink:hover {
+  border-bottom: 2px solid black;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  padding-left: 160px;
+  height: 65%;
+  width: 100%;
+  background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-Surface-Family-Pro-Snapdragon-13in-12Ed-Laptop-15in-8Ed-Black-Platinum-Homepage?&resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3840&hei=2160&qlt=85&fit=constrain&dpr=on,2);
+  background-position: center;
+  background-size: cover;
+}
+
+section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sectionText {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+#new {
+  padding: 8px 20px;
+  background-color: #ffb900;
+  border: none;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+section h1 {
+  font-weight: 500;
+  font-size: 3vmax;
+  letter-spacing: 1px;
+}
+
+section p {
+  font-size: 1vmax;
+  line-height: 20px;
+}
+
+#learn-more {
+  background-color: #006dc1;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 5px;
+  color: white;
+  width: fit-content;
+}
+
+.category {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.catBox {
+  text-align: center;
+  color: #004275;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.catBox img {
+  margin-bottom: 8px;
+}
+
+.catBox p {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.cards {
+  padding: 0px 180px;
+  /* height: 60%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.cardBox {
+  height: 85%;
+  /* width: 25%; */
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+
+.cardBox:hover {
+  box-shadow: 0px 0px 5px rgb(179, 179, 179);
+}
+
+#cardBoxImg {
+  width: 100%;
+  height: 40%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 23px;
+}
+
+#cardBoxImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.boxText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.boxText h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.boxText p {
+  line-height: 25px;
+}
+
+footer {
+  height: 45%;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerbox h4 {
+  font-size: 15px;
+  color: rgb(80, 80, 80);
+}
+
+.footerbox p {
+  font-size: 13px;
+  color: gray;
+  cursor: pointer;
+}
+
+.footerbox p:hover {
+  text-decoration: underline;
+}
+
+.resLeft {
+  font-size: 25px;
+}
+
+#res-nav {
+  display: none;
+}
+
+.res-text {
+  display: none;
+  padding: 40px;
+  background: linear-gradient(to right, #9cd0eb, #bab9e4);
+}
+
+@media (max-width: 1400px) {
+  .res-1400 {
+    display: none;
+  }
+
+  .cards {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .res-868 {
+    display: none;
+  }
+
+  .cards {
+    padding: 0px 30px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 860px) {
+  #large-nav {
+    display: none;
+  }
+
+  #res-nav {
+    display: flex;
+  }
+
+  .navLink i {
+    font-size: 25px;
+  }
+
+  nav {
+    padding: 0px 20px;
+  }
+
+  .res-text {
+    display: block;
+  }
+
+  .res-868-text {
+    display: none;
+  }
+
+  section {
+    height: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .category {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: 40px;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

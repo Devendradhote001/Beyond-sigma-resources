@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+    @font-face {
+      font-family: gilroy;
+      src: url(https://media-assets.swiggy.com/dls-web-assets/dls/fonts/Gilroy-SemiBold.woff2);
+    }
+  </style>-
+  <body class="h-screen">
+    <main
+      class="h-full max-h-[90%] w-full relative w-screen bg-[#FF5201] flex flex-col items-center"
+    >
+      <nav class="flex w-full justify-between items-center px-[10%] py-5">
+        <img
+          class="h-fit w-[20%] sm:w-[20%] md:w-[20%] lg:w-[20%] xl:w-[10%] 2xl:w-[20%]"
+          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/static-assets/images/swiggy_logo_white.png"
+          alt=""
+        />
+
+        <div class="flex gap-5 text-[9px] text-white items-center">
+          <p class="font-[gilroy]">Swiggy corporate</p>
+          <p>Partner with us</p>
+
+          <button class="p-2 rounded-lg border border-white cursor-pointer">
+            Get the app <i class="ri-arrow-right-up-long-line"></i>
+          </button>
+
+          <button
+            class="px-3 rounded-lg py-2 border-0 bg-black text-white cursor-pointer"
+          >
+            Signin
+          </button>
+        </div>
+      </nav>
+
+      <section
+        class="w-[75%] mt-5 flex flex-col gap-3 items-center justify-center"
+      >
+        <h1
+          class="font-[gilroy] text-white text-[2.5vmax] leading-none text-center"
+        >
+          Order food & groceries. Discover <br />
+          best restaurants. Swiggy it!
+        </h1>
+
+        <div class="flex gap-4 w-full justify-center">
+          <div
+            class="bg-white w-[50%] max-w-[20%] rounded-xl p-2 flex itmes-center gap-3"
+          >
+            <i class="ri-map-pin-line text-[#FF5201] text-xs"></i>
+            <input
+              class="text-[8px] w-full outline-0"
+              type="text"
+              placeholder="Enter your delivery location"
+            />
+            <i class="ri-arrow-down-s-line text-xs"></i>
+          </div>
+
+          <div class="flex gap-8 p-2 w-[30%] items-center bg-white rounded-xl">
+            <input
+              class="text-[8px] w-full outline-0"
+              type="text"
+              placeholder="Search for restaurant, item or more"
+            />
+            <i class="ri-search-line text-[8px]"></i>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            class="w-full max-w-[35%]"
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.png"
+            alt=""
+          />
+          <img
+            class="w-full max-w-[35%]"
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.png"
+            alt=""
+          />
+          <img
+            class="w-full max-w-[35%]"
+            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.png"
+            alt=""
+          />
+        </div>
+
+        <div class="h-1.5 w-full bg-white"></div>
+
+        <img
+          class="absolute left-0 top-[10%] max-w-[13%]"
+          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png"
+          alt=""
+        />
+
+        <img
+          class="absolute right-0 top-[10%] max-w-[13%]"
+          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
+          alt=""
+        />
+      </section>
+    </main>
+  </body>
+</html>

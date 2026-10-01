@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+main {
+  height: 40%;
+  width: 40%;
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  main {
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    background-color: green;
+  }
+  
+}

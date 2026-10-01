@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  padding: 30px 50px;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  height: 70px;
+  width: 7dvh;
+}
+.img img {
+  height: 100%;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 15px 35px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+section {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 350px;
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(173, 173, 173);
+}
+
+.car-div {
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  top: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: 16%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#porsche {
+  font-weight: 500;
+}
+
+#dets {
+  font-size: 40px;
+  color: gray;
+}
+
+.mid {
+  display: flex;
+  gap: 60px;
+}
+
+.mid p {
+  color: gray;
+  font-size: 20px;
+}
+.mid h2 {
+  font-size: 30px;
+}
+
+.mid div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgDiv {
+  display: flex;
+  gap: 10px;
+}
+
+.imgBox {
+  height: 80px;
+  width: 150px;
+  background-color: red;
+}
+
+.imgBox > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

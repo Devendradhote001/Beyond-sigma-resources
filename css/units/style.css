@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  font-size: 20px;
+  /* transition: all 0.5s ease-in-out; */
+  /* transition-duration: 0.5s;
+  transition-timing-function: ease-in-out; */
+  animation: moveRight 1s ease-in-out infinite alternate;
+}
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+#heading {
+  animation: moveRight 1.2s ease-in-out 0s 1 forwards;
+}
+
+/* main:hover {
+  transform: rotateZ(90deg);
+} */
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(600px);
+  }
+}
+
+h2 {
+  /* font-size: 3rem; */
+  font-size: clamp(40px, 5vw, 90px);
+}
+
+/* .box {
+  height: 200px;
+  background-color: red;
+  width: 200px;
+} */
+
+/* .nested {
+  background-color: green;
+} */
